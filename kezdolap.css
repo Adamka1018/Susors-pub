@@ -1,13 +1,36 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(image0.png);
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./IKT/kepek/image0.png");
     background-repeat: no-repeat;
     background-size: cover;
-    position: absolute;
 }
-.vanish-door {
-    posi
-    width: 40px;
-    height: 60px;
+
+.door {
+    position: absolute;
+    left: 45vw;
+    bottom: 4vh;
+    width: 109.9px;
+    height: 160px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-image 0.2s ease-in-out;
+}
+
+.door:hover {
+    width: 198px;
+    height: 172px;
+    left: 41.5vw;
+    bottom: 1vh;
+    background-image: url("./IKT/kepek/door.png");
 }
