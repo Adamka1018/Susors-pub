@@ -1,13 +1,77 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(image0.png);
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./IKT/kepek/image0.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+
+.door {
     position: absolute;
+    left: 41vw;
+    bottom: 0vh;
+    top: 33vw;
+    width: 206px;
+    height: 210px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-image 0.2s ease-in-out;
 }
-.vanish-door {
-    posi
-    width: 40px;
-    height: 60px;
+
+.door:hover {
+    width: 206px;
+    height: 210px;
+    left: 41vw;
+    bottom: 0vh;
+    background-image: url("./IKT/kepek/door.png");
 }
+
+.elhomalyosodas {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    justify-content: center;
+    display: block;
+    color: white;
+    font-family: monospace;
+    padding: 20px;
+    animation: eltunik 5s ease forwards; /* ease, forwards: az animáció végén maradjon a végállapotban */
+    font-size: 30px;
+    position: fixed; /* vagy 'absolute' */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%); /* Pontos középre helyezés */
+
+}
+
+@keyframes eltunik {
+    0% {
+        opacity: 1;
+        filter: blur(0);
+    }
+    70% {
+        opacity: 1;
+        filter: blur(0);
+    }
+    100% {
+        opacity: 0;
+        filter: blur(4px);
+        visibility: hidden;
+    }
+}
+
