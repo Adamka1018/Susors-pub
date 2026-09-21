@@ -2,46 +2,76 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./IKT/kepek/image0.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .container {
-    height: 100vh;
-    width: 100vw;
-    background-image: url(image0.png); /* ZÁRT ajtós háttér */
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative; /* Átváltva relative-ra, hogy a belső elemek ehhez igazodjanak */
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
 }
 
-/* A kis láthatatlan gomb pontosan az ajtón */
-.vanish-door {
+.door {
     position: absolute;
-    width: 109.9px;
-    height: 160px;
-    left: 45vw;
-    bottom: 4vh;
-    background: transparent;
+    left: 41vw;
+    bottom: 0vh;
+    top: 33vw;
+    width: 206px;
+    height: 210px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
     cursor: pointer;
-    z-index: 10; /* Ez mindig a legfelső réteg, hogy kattintható legyen */
+    z-index: 10;
+    transition: background-image 0.2s ease-in-out;
 }
 
-/* A nyitott ajtós háttér alaphelyzetben el van rejtve (opacity: 0) */
-.open-door-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-image: url(image.png); /* NYITOTT ajtós háttér */
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 5; /* A gomb alatt van, de a sima háttér felett */
-    opacity: 0; /* Alapból láthatatlan */
-    pointer-events: none; /* Biztosítja, hogy ez a réteg ne zavarja az egeret */
-    transition: opacity 0.2s ease-in-out; /* Opcionális: szép, lágy ajtónyílás */
+.door:hover {
+    width: 206px;
+    height: 185px;
+    left: 41vw;
+    bottom: 0vh;
+    background-image: url("./IKT/kepek/door.png");
 }
 
-/* A MÁGIA: Amikor a gomb felett van az egér, a nyitott háttér láthatóvá válik (opacity: 1) */
-.vanish-door:hover + .open-door-bg {
-    opacity: 1;
+.elhomalyosodas {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    justify-content: center;
+    display: block;
+    color: white;
+    font-family: monospace;
+    padding: 20px;
+    animation: eltunik 5s ease forwards; /* ease, forwards: az animáció végén maradjon a végállapotban */
+    font-size: 30px;
+    position: fixed; /* vagy 'absolute' */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%); /* Pontos középre helyezés */
+
 }
+
+@keyframes eltunik {
+    0% {
+        opacity: 1;
+        filter: blur(0);
+    }
+    70% {
+        opacity: 1;
+        filter: blur(0);
+    }
+    100% {
+        opacity: 0;
+        filter: blur(4px);
+        visibility: hidden;
+    }
+}
+
