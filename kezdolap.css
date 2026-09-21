@@ -1,13 +1,47 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(image0.png);
+    overflow: hidden;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(image0.png); /* ZÁRT ajtós háttér */
     background-repeat: no-repeat;
     background-size: cover;
-    position: absolute;
+    position: relative; /* Átváltva relative-ra, hogy a belső elemek ehhez igazodjanak */
 }
+
+/* A kis láthatatlan gomb pontosan az ajtón */
 .vanish-door {
-    posi
-    width: 40px;
-    height: 60px;
+    position: absolute;
+    width: 109.9px;
+    height: 160px;
+    left: 45vw;
+    bottom: 4vh;
+    background: transparent;
+    cursor: pointer;
+    z-index: 10; /* Ez mindig a legfelső réteg, hogy kattintható legyen */
+}
+
+/* A nyitott ajtós háttér alaphelyzetben el van rejtve (opacity: 0) */
+.open-door-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(image.png); /* NYITOTT ajtós háttér */
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 5; /* A gomb alatt van, de a sima háttér felett */
+    opacity: 0; /* Alapból láthatatlan */
+    pointer-events: none; /* Biztosítja, hogy ez a réteg ne zavarja az egeret */
+    transition: opacity 0.2s ease-in-out; /* Opcionális: szép, lágy ajtónyílás */
+}
+
+/* A MÁGIA: Amikor a gomb felett van az egér, a nyitott háttér láthatóvá válik (opacity: 1) */
+.vanish-door:hover + .open-door-bg {
+    opacity: 1;
 }
