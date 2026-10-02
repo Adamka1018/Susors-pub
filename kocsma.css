@@ -1,19 +1,94 @@
 body {
-<<<<<<< Updated upstream
-    background-image: url(./IKT/hatter.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 1;
+    background-color: #2b110d;
+    font-family: monospace;
+}
+.bar {
+    background-color: #681e1c;
+    justify-content: space-between;
+    text-align: center;
+    display: flex;
+    font-size: larger;
+    margin: 5px;
+    border-radius: 20px;
+}
+#logos {
+    width: 7vw;
+    height: 12vh;
+    margin: 13px;
+    transition: 0.4s ease-in-out;
+    background-color:#31120e;
+    border-radius: 20px;
+}
+#logos:hover {
+    width: 8vw;
+    height: 13.5vh;
+    transition: 0.4s ease-in-out;
 }
 
-#pult{
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100vh;
-=======
-    background-image: url();
->>>>>>> Stashed changes
+nav {
+    text-decoration: none;
+    display: flex;
+    list-style: none;
+    color: inherit;
+    margin: 13px;
+}
+.a_hover {
+    text-decoration: none !important;
+    font-size: 30px;
+    display: flex;
+    margin: 13px;
+    padding: 5px;
+    color: white;
+    border-radius: 9px;
+    background-color: #2e0b06;
+    transition: 0.3s ease-in-out;
+}
+.a_hover:hover {
+    transition: 0.3s ease-in-out;
+    font-size: 45;
+    padding: 7px;
+    color: white;
+    margin: 15px;
+}
+h4 {
+    font-size: 30px;
+    color: aliceblue;
+    padding: 5px;
+}
+#kezdolap{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    
+}
+h1 {
+   font-size: 70px; 
+   color: white;
+}
+h3 {
+    font-size: 30px;
+    color: white;
+}
+#kocsmas_bacsi {
+    transition: transform 1s ease;
+}
+#kocsmas_bacsi:hover {
+    transform: rotate(10deg);
+    
+}
+.jersey-25-regular {
+  font-family: "Jersey 25", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kocsmaxd {
+    justify-content: center;
+    z-index: 10;
+    display: block;
+    width: 800px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 20px;
 }
