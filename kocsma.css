@@ -30,14 +30,14 @@ nav {
     display: flex;
     list-style: none;
     color: inherit;
-    margin: 13px;
+    margin: 9px;
 }
 .a_hover {
     text-decoration: none !important;
     font-size: 30px;
     display: flex;
-    margin: 13px;
-    padding: 5px;
+    margin: 10px;
+    padding: 2px;
     color: white;
     border-radius: 9px;
     background-color: #2e0b06;
@@ -46,9 +46,9 @@ nav {
 .a_hover:hover {
     transition: 0.3s ease-in-out;
     font-size: 45;
-    padding: 7px;
+    padding: 5px;
     color: white;
-    margin: 15px;
+    margin: 12px;
 }
 h4 {
     font-size: 30px;
@@ -76,18 +76,27 @@ h3 {
     transform: rotate(10deg);
     
 }
+#noir {
+    transition: transform 1s ease;
+}
+#noir:hover {
+   transform: rotate(10deg);
+}
 .jersey-25-regular {
   font-family: "Jersey 25", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
+
 .kocsmaxd {
     justify-content: center;
     z-index: 10;
     display: block;
-    width: 800px;
-    height: 500px;
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    max-height: 500px;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 20px;
