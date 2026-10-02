@@ -30,14 +30,14 @@ nav {
     display: flex;
     list-style: none;
     color: inherit;
-    margin: 13px;
+    margin: 9px;
 }
 .a_hover {
     text-decoration: none !important;
     font-size: 30px;
     display: flex;
-    margin: 13px;
-    padding: 5px;
+    margin: 10px;
+    padding: 2px;
     color: white;
     border-radius: 9px;
     background-color: #2e0b06;
@@ -46,9 +46,9 @@ nav {
 .a_hover:hover {
     transition: 0.3s ease-in-out;
     font-size: 45;
-    padding: 7px;
+    padding: 5px;
     color: white;
-    margin: 15px;
+    margin: 12px;
 }
 h4 {
     font-size: 30px;
