@@ -37,7 +37,7 @@ nav {
     font-size: 30px;
     display: flex;
     margin: 10px;
-    padding: 2px;
+    padding: 6px;
     color: white;
     border-radius: 9px;
     background-color: #2e0b06;
@@ -46,7 +46,7 @@ nav {
 .a_hover:hover {
     transition: 0.3s ease-in-out;
     font-size: 45;
-    padding: 5px;
+    padding: 7px;
     color: white;
     margin: 12px;
 }
@@ -89,6 +89,7 @@ h3 {
 }
 
 
+
 .kocsmaxd {
     justify-content: center;
     z-index: 10;
@@ -102,7 +103,7 @@ h3 {
     box-shadow: 20px;
 }
 
-@keyframes appear {
+@keyframes bezoomolas {
     from {
         opacity: 0;
         scale: 0.5;
@@ -114,11 +115,74 @@ h3 {
 }
 
 .block {
-    animation: appear 1s linear;
+    animation: bezoomolas 1s linear;
     
 }
 .block2 {
-    animation: appear linear;
+    animation: bezoomolas linear;
     animation-timeline: view();
     animation-range: entry 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+#alahuzas {
+    position: relative;
+    width: max-content;
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+#alahuzas:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    top: 100%;
+    left: 0;
+    background: #ffff;
+    transition: transform 0.3s;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+#alahuzas:hover::after {
+   transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+p {
+    color: white;
+    text-align: center;
+    display: block;
+}
+
+.informaciok {
+    position: relative;
+    justify-content: center;
+
+}
+.kartya {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    gap: 25px;
+    background-color: #38100f;
+    border-radius: 30px;
+    margin: 8px;
+    padding: 10px;
+    animation: eltunes linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
+@keyframes eltunes {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
