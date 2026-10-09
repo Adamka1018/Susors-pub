@@ -5,7 +5,7 @@ body {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-image: url("./IKT/image0.png");
+    background-image: url("./IKT/kepek/image.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -23,8 +23,10 @@ body {
     left: 42vw;
     bottom: 0vh;
     top: 33.5vw;
-    width: 250px;
-    height: 210px;
+    width: 100%;
+    max-width: 210px;
+    height: 100%;
+    max-height: 230px;
     display: block;
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,11 +36,14 @@ body {
 }
 
 .door:hover {
-    width: 250px;
-    height: 270px;
-    left: 41.5vw;
-    bottom: 0vh;
-    background-image: url("./IKT/door.png");
+    width: 100%;
+    max-width: 210px;
+    height: 100%;
+    max-height: 230px;
+    left: 41vw;
+    bottom: 1vh;
+    top: 33vw;
+    background-image: url("./IKT/kepek/door.png");
 }
 
 .elhomalyosodas {

@@ -1,15 +1,187 @@
 body {
-    background-image: url(./IKT/hatter.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 1;
+    background-color: #2b110d;
+    font-family: monospace;
+}
+.bar {
+    background-color: #681e1c;
+    justify-content: space-between;
+    text-align: center;
+    display: flex;
+    font-size: larger;
+    margin: 5px;
+    border-radius: 20px;
+}
+#logos {
+    width: 7vw;
+    height: 12vh;
+    margin: 13px;
+    transition: 0.4s ease-in-out;
+    background-color:#31120e;
+    border-radius: 20px;
+}
+#logos:hover {
+    width: 8vw;
+    height: 13.5vh;
+    transition: 0.4s ease-in-out;
 }
 
-#pult{
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
+nav {
+    text-decoration: none;
+    display: flex;
+    list-style: none;
+    color: inherit;
+    margin: 9px;
+}
+.a_hover {
+    text-decoration: none !important;
+    font-size: 30px;
+    display: flex;
+    margin: 10px;
+    padding: 6px;
+    color: white;
+    border-radius: 9px;
+    background-color: #2e0b06;
+    transition: 0.3s ease-in-out;
+}
+.a_hover:hover {
+    transition: 0.3s ease-in-out;
+    font-size: 45;
+    padding: 7px;
+    color: white;
+    margin: 12px;
+}
+h4 {
+    font-size: 30px;
+    color: aliceblue;
+    padding: 5px;
+}
+#kezdolap{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    
+}
+h1 {
+   font-size: 70px; 
+   color: white;
+}
+h3 {
+    font-size: 30px;
+    color: white;
+}
+#kocsmas_bacsi {
+    transition: transform 1s ease;
+}
+#kocsmas_bacsi:hover {
+    transform: rotate(10deg);
+    
+}
+#noir {
+    transition: transform 1s ease;
+}
+#noir:hover {
+   transform: rotate(10deg);
+}
+.jersey-25-regular {
+  font-family: "Jersey 25", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+.kocsmaxd {
+    justify-content: center;
+    z-index: 10;
+    display: block;
     width: 100%;
-    height: 100vh;
+    max-width: 800px;
+    height: 100%;
+    max-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 20px;
+}
+
+@keyframes bezoomolas {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.block {
+    animation: bezoomolas 1s linear;
+    
+}
+.block2 {
+    animation: bezoomolas linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+#alahuzas {
+    position: relative;
+    width: max-content;
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+#alahuzas:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    top: 100%;
+    left: 0;
+    background: #ffff;
+    transition: transform 0.3s;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+#alahuzas:hover::after {
+   transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+p {
+    color: white;
+    text-align: center;
+    display: block;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+.kartya {
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    gap: 25px;
+    background-color: #38100f;
+    border-radius: 30px;
+    margin: 8px;
+    padding: 10px;
+    animation: eltunes linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
+@keyframes eltunes {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
