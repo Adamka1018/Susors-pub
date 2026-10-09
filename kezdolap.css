@@ -5,11 +5,7 @@ body {
     position: relative;
     width: 100vw;
     height: 100vh;
-<<<<<<< Updated upstream
-    background-image: url("./IKT/kepek/image0.png");
-=======
-    background-image: url("./IKT/image.png");
->>>>>>> Stashed changes
+    background-image: url("./IKT/kepek/image.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
