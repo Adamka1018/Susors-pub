@@ -5,7 +5,7 @@ body {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-image: url("./IKT/kepek/image.png");
+    background-image: url("./IKT/kepek/image0.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -39,7 +39,7 @@ body {
     width: 100%;
     max-width: 210px;
     height: 100%;
-    max-height: 230px;
+    max-height: 300px;
     left: 41vw;
     bottom: 1vh;
     top: 33vw;
