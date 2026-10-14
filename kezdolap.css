@@ -36,6 +36,7 @@ body {
 }
 
 .door:hover {
+    position: relative;
     width: 100%;
     max-width: 210px;
     height: 100%;
@@ -55,7 +56,7 @@ body {
     color: white;
     font-family: monospace;
     padding: 20px;
-    animation: eltunik 5s ease forwards; /* ease, forwards: az animáció végén maradjon a végállapotban */
+    animation: eltunik 10s ease forwards; /* ease, forwards: az animáció végén maradjon a végállapotban */
     font-size: 30px;
     position: fixed; /* vagy 'absolute' */
     top: 50%;
