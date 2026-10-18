@@ -5,7 +5,7 @@ body {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-image: url("./IKT/kepek/image.png");
+    background-image: url("./IKT/kepek/image0.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -61,7 +61,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -100%); /* Pontos középre helyezés */
-
 }
 
 @keyframes eltunik {
