@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="./IKT/kepek/logo.png">
+    <link rel="stylesheet" href="jatekok.css">
+    <script src="jatekok.js" defer></script>
 </head>
 <body>
     <header class="bar">
@@ -37,12 +39,24 @@
         <div id="kocsma" class="block2">
             <h1 class="jersey-25-regular" style="text-align: center;" class="block2" id="alahuzas">A kocsma</h1>
             <h3 class="jersey-25-regular" style="text-align: center;" class="block2">Kattints Lajosra a kezdéshez!</h3>
-            <button class="kocsmaxd">
-                <a href="" class="kocsmaxd">
-                    <img src="./IKT/kepek/hatterkeplol.png" alt="" title="" class="kocsmaxd" style="border-radius: 50px; z-index: 10;">
-                </a>
+            <!-- Gomb, ami megnyitja a felugró ablakot -->
+            <button id="openBtn" class="kocsmaxd">
+                <img src="./IKT/kepek/hatterkeplol.png" alt="" title="" class="kocsmaxd" style="border-radius: 50px; z-index: 10;">
             </button>
-            
+        </div>
+        <!-- Maga a felugró ablak (háttér és tartalom) -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <button id="btn-jatek">Black Jack</button>
+                <button id="btn-jatek">Félkarú</button>
+                <button id="btn-jatek">Rulett</button>
+                <button id="btn-jatek">Kaparós sorsjegy</button>
+                <button id="btn-jatek">Szkander</button>
+                <button id="btn-jatek">Tippmix</button>
+                <button id="btn-jatek">Lóverseny</button>
+                <button id="btn-jatek">Coinflip</button>
+            </div>
         </div>
         <br>
         <br>
