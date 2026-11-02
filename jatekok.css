@@ -1,6 +1,4 @@
-html {
-  background-image: url(IKT/Kepek/);
-}
+
 
 /* A felugró ablak háttere (sötétedő effekt) */
 .modal {
@@ -23,13 +21,15 @@ html {
 
 /* A felugró ablak fehér doboza - MEGNÖVELT MÉRET */
 .modal-content {
-  background-color: #fff;
+  background-image: url(IKT/Kepek/kocsmaros_blured.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   margin: -50px auto 0 auto; 
-  padding: 40px;               /* Nagyobb belső hely a tartalomnak (20px helyett) */
+  padding: 20px;               /* Nagyobb belső hely a tartalomnak (20px helyett) */
   border-radius: 12px;
   width: 90%;                  /* Mobilképernyőkön jobban kitölti a helyet */
-  max-width: 800px;            /* Itt állíthatod be a maximális szélességet (450px helyett 800px) */
-  min-height: 300px;           /* Opcionális: adhatsz neki egy alap magasságot is */
+  max-width: 1000px;            /* Itt állíthatod be a maximális szélességet (450px helyett 800px) */
+  min-height: 500px;           /* Opcionális: adhatsz neki egy alap magasságot is */
   position: relative;
   box-shadow: 0 4px 25px rgba(0,0,0,0.3);
   opacity: 0;
