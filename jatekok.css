@@ -1,3 +1,7 @@
+html {
+  background-image: url(IKT/Kepek/);
+}
+
 /* A felugró ablak háttere (sötétedő effekt) */
 .modal {
   display: none; 
@@ -78,3 +82,4 @@
 #openBtn {
     cursor: pointer;
 }
+
