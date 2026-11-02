@@ -101,6 +101,8 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     box-shadow: 20px;
+    background: none;
+    border: none;
 }
 
 @keyframes bezoomolas {
