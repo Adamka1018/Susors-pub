@@ -78,6 +78,9 @@ h3 {
 }
 #noir {
     transition: transform 1s ease;
+    background: none;
+    border: none;
+    cursor: default;
 }
 #noir:hover {
    transform: rotate(10deg);
