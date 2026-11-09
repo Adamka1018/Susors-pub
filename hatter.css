@@ -1,0 +1,9 @@
+body {
+    background-color: #2b110d;
+}
+
+.kozep {
+    width: 10vw;
+    height: 10vh;
+    background-color: rgb(87, 202, 11);
+}
