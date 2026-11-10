@@ -4,7 +4,7 @@ const closeBtn = document.querySelector(".close-btn");
 
 // Ablak megnyitása animációval
 openBtn.addEventListener("click", () => {
-  modal.style.display = "block"; // Megjelenítjük a DOM-ban
+  modal.style.display = "flex"; // Megjelenítjük a DOM-ban
   setTimeout(() => {
     modal.classList.add("show"); // Elindítjuk a CSS animációt
   }, 10); // Egy minimális csúszás kell a böngészőnek a váltáshoz
