@@ -27,3 +27,19 @@ window.addEventListener("click", (event) => {
     closeModal();
   }
 });
+
+
+// -----------------------------------------------------------------------------------------
+
+
+const keresGomb = document.querySelector("#GombKerek");
+const megallitGomb = document.querySelector("#GombStop");
+const osszegbefizetesGomb = document.querySelector("#osszegbefizetes");
+const KeszGomb = document.querySelector("#GombDone");
+const visszajelzes = document.querySelector("#review");
+const osztasok = document.querySelector("#dealerosztasok");
+
+let lapjaim = document.querySelector("#kartyaszam");
+let osszegem = document.querySelector("#egyenleg");
+
+
