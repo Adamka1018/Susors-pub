@@ -78,6 +78,9 @@ h3 {
 }
 #noir {
     transition: transform 1s ease;
+    background: none;
+    border: none;
+    cursor: default;
 }
 #noir:hover {
    transform: rotate(10deg);
@@ -101,6 +104,8 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     box-shadow: 20px;
+    background: none;
+    border: none;
 }
 
 @keyframes bezoomolas {
