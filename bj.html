@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./IKT/kepek/blackjack.png">
+    <title>Black Jack</title>
+    <link rel="stylesheet" href="./CSS/bj.css">
+</head>
+<body>
+    <header class="bar">
+        <a href="main.html"><img src="./IKT/kepek/logo.png" alt="logo" id="logos"></a>
+        <audio id="zene" src="bg.mp3"></audio>
+        <button onclick="document.getElementById('zene').play()" style="background-color: #2e0b06; color: white;">🎵 Noir Tom</button>
+        <nav class="jersey-25-regular">
+            <ul><a href="main.html" class="a_hover">Kezdőlap</a></ul>
+            <ul><a href="main.html" class="a_hover">Vissza</a></ul>
+        </nav>
+    </header>
+    <br>
+
+    <main>
+        <div class="jatekkartya">
+            <div class="diler">
+                <h1 class="jersey-25-regular">A Dealer aka Barnabas</h1>
+                <img src="./IKT/kepek/dealerimg.jpg" alt="" style="width: 100%; max-width: 33vw; height: 100%; max-height: 25vh; border-radius: 20px;">
+                <br>
+            </div>
+            <div class="jatek">
+                <span>Lehetőleg azokat az anyagokat használjuk a javascriptnél amit eddig tanultunk, AI-t csak ha nagyon szükséges!</span>
+                <p>
+                    a gép osztásai: (mikor rá nyomunk arra hogy kérünk még, az itt megjelenő új szám automatikusan hozzá adódik a mi kártyánk számainak összegéhez)
+                </p>
+                <p>
+                    Ez a szöveg akkor jelenik meg ha pont 21-ünk van, vagy túl mentünk a 21-nél. ha túl mentünk, a játék újra oszt vagy először tétet raksz  fel.
+                </p>
+                <br>
+                <p>
+                    a téted: <strong>0</strong>
+                </p>
+                <p>
+                    A te lapjaid:
+                </p>
+            </div>
+            <div class="Gombok">
+                <button type="button" class="Gomb" id="GombKerek">Kérek még!</button>
+                <button type="button" class="Gomb" id="GombStop">Megállok!</button>
+                <input placeholder="tétek felrakása (pl:2500ft)" type="number" id="osszegbefizetes" class="Gomb">
+                <button type="button" class="Gomb" id="GombDone">Kész!</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
