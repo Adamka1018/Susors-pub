@@ -71,6 +71,7 @@ h3 {
 }
 #kocsmas_bacsi {
     transition: transform 1s ease;
+    
 }
 #kocsmas_bacsi:hover {
     transform: rotate(10deg);

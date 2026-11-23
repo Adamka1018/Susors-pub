@@ -1,0 +1,123 @@
+body {
+      background: linear-gradient(
+        135deg,
+        #f4f81c,
+        hsl(59, 76%, 39%),
+        #f0ed57
+    );
+    background-size: 400% 400%;
+    animation: atvaltozas 10s infinite;
+    margin: 0;
+    min-height: 100vh;
+}
+
+@keyframes atvaltozas {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.bar {
+    background-color: #681e1c;
+    justify-content: space-between;
+    text-align: center;
+    display: flex;
+    font-size: larger;
+    margin: 5px;
+    border-radius: 20px;
+}
+#logos {
+    width: 7vw;
+    height: 12vh;
+    margin: 13px;
+    transition: 0.4s ease-in-out;
+    background-color:#31120e;
+    border-radius: 20px;
+}
+nav {
+    text-decoration: none;
+    display: flex;
+    list-style: none;
+    color: inherit;
+    margin: 9px;
+}
+.a_hover {
+    text-decoration: none !important;
+    font-size: 30px;
+    display: flex;
+    margin: 10px;
+    padding: 6px;
+    color: white;
+    border-radius: 9px;
+    background-color: #2e0b06;
+    transition: 0.3s ease-in-out;
+}
+.a_hover:hover {
+    transition: 0.3s ease-in-out;
+    font-size: 45;
+    padding: 7px;
+    color: white;
+    margin: 12px;
+}
+
+.jersey-25-regular {
+  font-family: "Jersey 25", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.BorderCF {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 40vw;
+    max-width: 100%;
+    height: 48vh;
+    max-height: 100%;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1.9);
+}
+h1,h2,p,h3 {
+    text-align: center;
+    font-size: 25px;
+}
+h1 {
+    font-size: 40px;
+}
+
+.Gomb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 70px;
+    margin: 0;
+    padding: 7px;
+    color: black;
+    background-color: #f0ed57;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: monospace;
+    font-size: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1.9);
+}
+
+.Gombok {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 8px;
+    box-sizing: border-box;
+}

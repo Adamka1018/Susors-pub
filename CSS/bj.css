@@ -1,0 +1,101 @@
+body {
+    background-color: #142e12;
+}
+
+.bar {
+    background-color: #681e1c;
+    justify-content: space-between;
+    text-align: center;
+    display: flex;
+    font-size: larger;
+    margin: 5px;
+    border-radius: 20px;
+}
+#logos {
+    width: 7vw;
+    height: 12vh;
+    margin: 13px;
+    transition: 0.4s ease-in-out;
+    background-color:#31120e;
+    border-radius: 20px;
+}
+#logos:hover {
+    width: 8vw;
+    height: 13.5vh;
+    transition: 0.4s ease-in-out;
+}
+
+nav {
+    text-decoration: none;
+    display: flex;
+    list-style: none;
+    color: inherit;
+    margin: 9px;
+}
+.a_hover {
+    text-decoration: none !important;
+    font-size: 30px;
+    display: flex;
+    margin: 10px;
+    padding: 6px;
+    color: white;
+    border-radius: 9px;
+    background-color: #2e0b06;
+    transition: 0.3s ease-in-out;
+}
+.a_hover:hover {
+    transition: 0.3s ease-in-out;
+    font-size: 45;
+    padding: 7px;
+    color: white;
+    margin: 12px;
+}
+
+.jersey-25-regular {
+  font-family: "Jersey 25", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.jatekkartya {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1px;
+    width: 40vw;
+    height: 78.3vh;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.diler {
+    font-size: 22px;
+}
+
+.Gombok {
+    margin: 0 auto;
+    padding: 0;
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+
+}
+.Gomb {
+    color: white;
+    border: none;
+    background-color: #8914b8;
+    width: 100%;
+    max-width: 10vw;
+    height: 100%;
+    max-height: 4vw;
+    border-radius: 6px;
+    transition: 0.6s ease-in-out;
+}
+.Gomb:hover{
+    background-color: #c368e7;
+}

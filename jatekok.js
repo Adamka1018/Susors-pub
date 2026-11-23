@@ -4,7 +4,7 @@ const closeBtn = document.querySelector(".close-btn");
 
 // Ablak megnyitása animációval
 openBtn.addEventListener("click", () => {
-  modal.style.display = "block"; // Megjelenítjük a DOM-ban
+  modal.style.display = "flex"; // Megjelenítjük a DOM-ban
   setTimeout(() => {
     modal.classList.add("show"); // Elindítjuk a CSS animációt
   }, 10); // Egy minimális csúszás kell a böngészőnek a váltáshoz
@@ -27,3 +27,21 @@ window.addEventListener("click", (event) => {
     closeModal();
   }
 });
+
+
+// -----------------------------------------------------------------------------------------
+
+
+const keresGomb = document.querySelector("#GombKerek");
+const megallitGomb = document.querySelector("#GombStop");
+const osszegbefizetesGomb = document.querySelector("#osszegbefizetes");
+const KeszGomb = document.querySelector("#GombDone");
+const visszajelzes = document.querySelector("#review");
+const osztasok = document.querySelector("#dealerosztasok");
+
+let lapjaim = document.querySelector("#kartyaszam");
+let osszegem = document.querySelector("#egyenleg");
+
+// Ezek után jönnek a functionok, jó ha a gombokkal kezdjük és közvetlenül hozzá az egyenleg változások.
+// a szabályok csak ezután: tétek limitje, minuszba nem mehet, ha nem ír semmit hibakódot írjon ki stb
+// dealer mechanizmusa és a lapok számainak összeadása
