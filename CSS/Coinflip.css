@@ -1,9 +1,9 @@
 body {
       background: linear-gradient(
         135deg,
-        #f4f81c,
-        hsl(59, 76%, 39%),
-        #f0ed57
+        #530763,
+        hsl(4, 73%, 33%),
+        #520909
     );
     background-size: 400% 400%;
     animation: atvaltozas 10s infinite;
@@ -102,13 +102,18 @@ h1 {
     margin: 0;
     padding: 7px;
     color: black;
-    background-color: #f0ed57;
+    background-color: #43197a;
     border-radius: 10px;
     border: none;
     cursor: pointer;
     font-family: monospace;
     font-size: 40px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 1.9);
+    transition: 0.3s ease-in-out;
+}
+.Gomb:hover{
+    width: 130px;
+    height: 80px;
 }
 
 .Gombok {
